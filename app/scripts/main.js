@@ -17,4 +17,4 @@ var data = {
 
 var source = $('#entry-template').html();
 var template = Handlebars.compile(source);
-$('.bands').html(template(data));
+$('.music').html(template(data));
