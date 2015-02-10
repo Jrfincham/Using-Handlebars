@@ -1,22 +1,46 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My Divshot Application</title>
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>assignment16</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <style>
-    body{
-      font:500 14px/21px 'Helvetica Neue', Helvetica, Arials;
-      padding:40px;
-    }
-  </style>
+    <link rel="stylesheet" href="styles/vendor.css">
 
-</head>
-<body>
-  <h1>Welcome to Divshot Hosting!</h1>
-  <p>Make something static!</p>
-  <h2>Should there be something here?</h2>
-  <p><a href="mailto:support@divshot.com">Get Help via Email</a> or <a href="http://docs.divshot.com/guides/common-deploy-issues">Common Deploy Issues Documentation</a></p>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+
+
+      <h1>A few bands Jason likes...</h1>
+
+        <div class="music">
+
+
+          <script id="entry-template" type="text/x-handlebars-template">
+
+            {{#each bands }}
+
+            <li>One of my favorite bands is {{ band }} based out of {{ location }}</li>
+
+            {{/each}}
+
+          </script>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="scripts/vendor.js"></script>
+
+        <script src="scripts/main.js"></script>
 </body>
 </html>
